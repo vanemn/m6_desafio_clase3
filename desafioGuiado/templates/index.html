@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+      section {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Nosotros</a></li>
+        <li><a href="{% url 'about' %}">Nosotros</a></li>
+        <li><a href="/contact">Contacto</a></li>
+    </nav>
+    <header>
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        cum autem, quisquam sint iure earum reiciendis minima similique mollitia
+        minus, assumenda soluta debitis rem architecto deserunt velit modi ipsam
+        provident!
+      </p>
+    </header>
+    <section>
+      <h2>Soy una sección</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        cum autem, quisquam sint iure earum reiciendis minima similique mollitia
+        minus, assumenda soluta debitis rem architecto deserunt velit modi ipsam
+        provident!
+      </p>
+    </section>
+  </body>
+</html>
